@@ -1,0 +1,35 @@
+Name: George Martin
+Class: COMP 3500
+Project: 3
+Section 4.1 - 4.3
+Questions: 1-10
+
+4.1.1 What happens to a thread when it exists? What about when it sleeps?
+A: Is decriments the reference pointer, destroys the space space of the thread, checks the stack band, and marks the thread as a zombie. 
+
+4.1.2 What function(s) handle(s) a context switch?
+A: mi_switch and md_switch.
+
+4.1.3 How many thread states are there? What are they?
+A: 4. S_RUN, S_READY, S_SLEEP, and S_ZOMB.
+
+4.1.4 What does it meant to turn interrupts off? How is this accomplished? Why is it important to turn off interrupts in the thread subsystem code?
+A: When interrupts are turned off (using splhigh) a process will not be halted during execution even if an interrupt is signaled. This is important because certain threads execute sensitive processes that if unfinished could lead to unwanted consequences and outcomes. Additionally, spl0 can be used to turn interrupts back on as it sets the priority to 0. 
+
+4.1.5 What happens when a thread wakes up another thread? How does a sleeping thread get to run again?
+A: The sleeping thread is removed from the waiting queue. make_runnable is then called adding it to the runqueue. When mi_switch is called the threat is returned by the scheduler. 
+
+4.2.6 What function is responsible for choosing the next thread to run?
+A: struct thread* scheduler(void);
+
+4.2.7 How does that function pick the next thread?
+A: A runqueue is used using time-slice for fairness (no priority).
+
+4.2.8 What role does the hardware timer play in scheduling? What hardware independent function is called on a timer interrupt?
+A: Hardware timer can call hardclock. When completed, thread_yield is called forcing a context switch.
+
+4.3.9 Describe how thread_sleep() and thread_wakeup() are used to implement seaphores. What is the purpose of the argument passed to thread_sleep()?
+A: thread_sleep is implemented in the P function, suspending the current thread until the count is more than zero. thread_wakeup() is used on the V function, waking up suspended threads. The argument passed to thread_sleep() contains the address the thread is assigned to sleep, and also the one used for thread_wakeup() to wake.
+
+4.3.10 Why does the lock API in OS/161 provide lock_do_i_hold(), but not lock_get_holder()?
+A: Locks must be released by the same thread that locked them.

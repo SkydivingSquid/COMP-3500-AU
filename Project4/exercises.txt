@@ -1,0 +1,18 @@
+Name: George Martin
+Class: COMP 3500
+Date: 3-23-2022
+
+Option 1 - Solution via Semaphore // catsem.cd
+
+
+1. How was starvation avoided?
+
+ In my implementation, starvation of any particular thread, specifically that of cats and mice, is avoided in several ways. First, we want to limit the amount of times either animal can eat (ie how many times a thread can run before it is satisfied). In this way, from a very abstract point of view, we can be assured that each animal will get to eat eveventually, however this doesn't necessarily solve the issue entrely (we wouldn't necessarily want this to be the case unless we set a priority or preemption in place - which isn't the case here). In this solution the use of semephores, mutex primaritves, and 'turns' help to keep threads moving fairly. When animals declare they are hungry (ie when a thread wants to run), they increase a semaphore variable; if the dishes are available the animal is allowed access to it, but this is only the case if it is the only animal in the kitchen (thread running using a resource). If another animal is in the kitchen, it must check to see if the thread type is the same and if there is an available resource to use. If both are true, the animal can get access, otherwise it must wait its turn. When animals are done eating it will do one of two things, either leave if alone, or if together, wait and then leave sequentally before releasing the lock to the dishes. This then frees the kitchen entirely allowing the two competing animal threads equal opportunity to eat. However, to help keep resource use fair, we take this one step further and implement a 'turn' function which will allow the opposite animal type access to the kitchen when the kitchen is empty. This above all else certainly mitigates any potential for starvation. Finally, using a mutex we are able to protect a dish and mark it as bush or available, ensuring animals do not attempt to share a singular resource and that the kitchen is not overrun with more than it should hold. 
+
+
+
+2. Comment on experience. Speak about principles of semaphore primatives. 
+
+ This project was ceratinly more complicated than I originally gave it credit for. Orignally, I went with the cv/lock method, feeling that I better understood how to use them. Unfortunately I would continue to get dropped thread errors (likely from a mismatch number of cv_wait and cv_signal calls (having forgotten the latter). Before Dr. Qin informed me of what I had done wrong, I had already restarted the project with a focus on a semaphore solution. My troubleshooting methods were primative, choosing to compile, make, read and correct the errors, and recompile and make. Over several iterations and reading the output, I was able to get a working solution. I would routinely add a series of 'kprintf' statements to help me understand what part of the code was working and what parts were failing or not being reached. Again - this is primative, but honest. This project helped to better solidify an understanding of how semaphores work, mutual exclusion is implemented, and beyond that - in the other version - how cv/locks work. I still stand by that cv/locks are far less complicated and easier to manage, however with limited knowledge and experience, and an approaching deadline, semaphore was the option I chose to follow through. Finally, this was the first time I was able to use the shorthand method calls P() and V() instead of wait() and signal(), which I remember as P()lease Wait.  
+
+

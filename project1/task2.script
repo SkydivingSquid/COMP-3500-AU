@@ -1,0 +1,12 @@
+Script started on Sat 22 Jan 2022 04:40:02 PM CST
+[?1034hbash-4.2$ more /proc/cup[K[Kpuinfo > cpuinfo.txt
+bash-4.2$ more /proc/meminfo >meminfo.txt
+bash-4.2$ more /proc/interrupts >interrupts.txt
+bash-4.2$ sl[K[Klspci > lspci.txt
+bash-4.2$ ls
+commands.script  interrupts.txt  meminfo.txt  task2.script
+cpuinfo.txt	 lspci.txt	 ntuser.cmd
+bash-4.2$ exit
+exit
+
+Script done on Sat 22 Jan 2022 04:40:45 PM CST

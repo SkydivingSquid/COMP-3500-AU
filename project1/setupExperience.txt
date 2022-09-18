@@ -1,0 +1,14 @@
+Author: George Martin
+Date: 01-22-2022
+
+Option 1: Since I am running in a macOS environment with dual boot (Windows) I chose to do Option1 for project 1. I am also familiar with using Terminal as a file transfer system and remoting into the Linux AU Server. 
+
+My experience included a moderate level of difficulty. I would suggest including how to upload and download using Terminal to the AU Server in the Option 1 instructions instead of Filezilla (especially if no instructions will be included with FIlezilla). Steps 3.3.4 and 3.4.6 were very difficult to follow and needed some modification in order to work. gdb specificall would not work witout running (gdb -iex 'add-auto-load-safe-path .').
+
+git could also be explained better as many of us have never had any experience with it prior to this project. I will likely do self-research after submitting this.
+
+In the end, I was able to accomplish all steps using Option1 which should yield a 100%. All 14 commands worked, all files were included in the tar, and the simple.c cde was not overly difficult (though did take some "dusting off" to recall how to code in c. 
+
+Additionally, I did download VirtualBox and centOS (10GB) from option2, but did not pursue this route. I am familiar with VMWare, however I disovered that many of the new apps such as Xcode and VMWare require macOS 11.X. I am running macOS 10.15.x since my laptop is a 2012 model. I am not in the market to spend $2,500 at the moment, so this will have to do, but the programs currently are installed. 
+
+

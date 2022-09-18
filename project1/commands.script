@@ -1,0 +1,109 @@
+Script started on Sat 22 Jan 2022 04:34:49 PM CST
+[?1034hbash-4.2$ md[K[Kls
+commands.script  file1	file2  file3  ntuser.cmd
+bash-4.2$ mksd[K[Kdir Task1
+bash-4.2$ mv file1 Task1[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcp file1 Task1
+bash-4.2$ cd Task1
+bash-4.2$ ls
+file1
+bash-4.2$ mv file1[K[K[K[K[K[K[K[Kpwd
+/home/u1/gbm0016/Task1
+bash-4.2$ m [Kv file1 ..
+bash-4.2$ ls
+bash-4.2$ cd ..
+bash-4.2$ ls
+commands.script  file1	file2  file3  ntuser.cmd  Task1
+bash-4.2$ rm file1
+bash-4.2$ ls
+commands.script  file2	file3  ntuser.cmd  Task1
+bash-4.2$ rmdir Task1/
+bash-4.2$ ls
+commands.script  file2	file3  ntuser.cmd
+bash-4.2$ chmod file2[K[K[K[K[K-x c[Kfile2
+bash-4.2$ man ls
+[?1049h[?1h=LS(1)                                 User Commands                                LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the  FILEs  (the  current  directory by default).  Sort[m
+       entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              scale sizes by SIZE before printing them;  e.g.,  '--block-size=M'  prints[m
+              sizes in units of 1,048,576 bytes; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file sta‐[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ clear[K[K[K[K[Ktop
+[?1h=[?25l[H[2J(B[mtop - 16:36:51 up 155 days,  9:10,  6 users,  load average: 19.20, 19.22, 19.13(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 491 (B[m[39;49mtotal,(B[m[39;49m[1m  20 (B[m[39;49mrunning,(B[m[39;49m[1m 471 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m 98.8 (B[m[39;49mus,(B[m[39;49m[1m  1.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m  0.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24508108 (B[m[39;49mtotal,(B[m[39;49m[1m 14241980 (B[m[39;49mfree,(B[m[39;49m[1m  3495904 (B[m[39;49mused,(B[m[39;49m[1m  6770224 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12386300 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m 20261228 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                (B[m[39;49m[K
+(B[m[1m  800 azb0198   20   0    4228    228    136 R 100.0  0.0  82237:44 lab43                  (B[m[39;49m[K
+(B[m[1m  955 azb0198   20   0    4228    228    136 R 100.0  0.0  82277:55 lab43                  (B[m[39;49m[K
+(B[m[1m 1209 azb0198   20   0    4228    228    136 R 100.0  0.0  82341:12 lab43                  (B[m[39;49m[K
+(B[m[1m 1301 azb0198   20   0    4228    232    136 R 100.0  0.0  82027:19 lab43                  (B[m[39;49m[K
+(B[m[1m 3255 azb0198   20   0    4228    232    136 R  87.0  0.0  82105:17 lab43                  (B[m[39;49m[K
+(B[m[1m 4995 azb0198   20   0    4228    228    136 R  82.6  0.0  82297:01 lab43                  (B[m[39;49m[K
+(B[m[1m 3128 azb0198   20   0    4228    228    136 R  73.9  0.0  82086:33 lab43                  (B[m[39;49m[K
+(B[m[1m 3934 azb0198   20   0    4228    228    136 R  73.9  0.0  82226:57 lab43                  (B[m[39;49m[K
+(B[m[1m29691 azb0198   20   0    4228    228    136 R  73.9  0.0  82128:24 lab43                  (B[m[39;49m[K
+(B[m[1m 2799 azb0198   20   0    4228    228    136 R  69.6  0.0  82098:53 lab43                  (B[m[39;49m[K
+(B[m[1m20028 bpm0005   20   0    4228    228    136 R  69.6  0.0  80859:57 lab43                  (B[m[39;49m[K
+(B[m[1m 1060 azb0198   20   0    4228    228    136 R  65.2  0.0  82020:51 lab43                  (B[m[39;49m[K
+(B[m[1m 4794 azb0198   20   0    4228    232    136 R  65.2  0.0  82168:50 lab43                  (B[m[39;49m[K
+(B[m[1m18756 rmj0020   20   0    4228    224    132 R  65.2  0.0  80815:40 lab43                  (B[m[39;49m[K
+(B[m[1m 3986 azb0198   20   0    4228    228    136 R  60.9  0.0  82396:18 lab43                  (B[m[39;49m[K
+(B[m[1m 4753 azb0198   20   0    4228    228    136 R  60.9  0.0  82268:11 lab43                  (B[m[39;49m[K
+(B[m[1m 3109 azb0198   20   0    4228    228    136 R  56.5  0.0  82099:51 lab43                  (B[m[39;49m[K
+(B[m[1m10413 tzd0048   20   0    4228    228    136 R  52.2  0.0  81181:28 lab43                  (B[m[39;49m[K
+(B[m[1m 4840 azb0198   20   0    4228    228    136 R  39.1  0.0  82273:57 lab43                  (B[m[39;49m[K
+(B[m[1m17779 gbm0016   20   0  168816   2752   1648 R   8.7  0.0   0:00.05 top                    (B[m[39;49m[K
+(B[m15853 eue0001   20   0 4639120 279284  90844 S   4.3  1.1   2108:46 gnome-shell            (B[m[39;49m[K
+(B[m16765 eue0001   20   0 2936264 642532  98664 S   4.3  2.6   5738:16 common_shell_ex        (B[m[39;49m[K
+(B[m    1 root      20   0   46900   7252   4032 S   0.0  0.0  46:20.16 systemd                (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:04.47 kthreadd               (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H           (B[m[39;49m[K
+(B[m    6 root      20   0       0      0      0 S   0.0  0.0   0:18.09 ksoftirqd/0            (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:07.25 migration/0            (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                 (B[m[39;49m[K[?1l>[36;1H
+[?12l[?25h[Kbash-4.2$ clear
+[3;J[H[2Jbash-4.2$ who
+eue0001  pts/1        2021-09-14 00:59 (:1)
+eue0001  pts/2        2021-09-16 07:21 (:10)
+eue0001  pts/3        2021-09-16 07:39 (:10)
+gbm0016  pts/10       2022-01-22 14:05 (ettin.eng.auburn.edu)
+gbm0016  pts/11       2022-01-22 16:34
+bash-4.2$ npric
+bash: npric: command not found
+bash-4.2$ npric[K[Koc
+16
+bash-4.2$ clear
+[3;J[H[2Jbash-4.2$ exit
+exit
+
+Script done on Sat 22 Jan 2022 04:37:17 PM CST
